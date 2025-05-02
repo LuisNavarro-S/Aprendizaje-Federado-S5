@@ -50,7 +50,8 @@ jupyter notebook Evaluacion_Modelo.ipynb
 
 Posterior a cada integrante entrenará su partición de la información, se importan los modelos para posteriormente "combinar" los pesos y armar un modelo globalizado
 
-* FedAvg: Promedia los pesos de los modelos, dentro de la implementación los obtiene en base a la arquitectura de 'TheModelFinalFinalV2.ipynb'.
+* FedAvg: Esta implementación considera los pesos de los modelos que se importaron dentro del código de evaluación, obteniendo un promedio de los mismos para el modelo global (conjunto de las n partes segmentadas); con esto se busca
+  de alguna forma consolidar la información de todos los entrenamientos en un sólo modelo; siendo esta implementación una de las más utilizadas.
 
 * FedProx: Esta implementación añade una variable de regulación dentro del código, dado que busca que los pesos del modelo global no se alejan del modelo localmente entrenado mediante la obtención de promedios (como FedAvg) y 
 los pesos locales. De forma coloquial, es una resta entre los pesos promedios y la diferencia entre los locales y este último. Esta manera de manejar el aprendizaje federado y juntarlos es frecuente cuando los datos se encuentran desbalanceados.
