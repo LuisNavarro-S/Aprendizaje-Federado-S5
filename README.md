@@ -12,7 +12,7 @@ Python y dependencias necesarias 🐍
 
 Acceso a los datos segmentados en formato 'data_part_#.json' (proporcionados en conjunto con su código confidencial en la entrega de Canvas)
 
-#Instrucciones de Uso
+# Instrucciones de Uso
 
 ## Clonar el repositorio
 ```bash
