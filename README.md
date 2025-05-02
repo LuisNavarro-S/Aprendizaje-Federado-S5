@@ -47,12 +47,13 @@ jupyter notebook Evaluacion_Modelo.ipynb
 ## Explicación FedAvg, FedProx y FedMax
 
 Posterior a cada integrante entrenará su partición de la información, se importan los modelos para posteriormente "combinar" los pesos y armar un modelo globalizado
-FedAvg: Promedia los pesos de los modelos, dentro de la implementación los obtiene en base a la arquitectura de 'TheModelFinalFinalV2.ipynb'
+
+FedAvg: Promedia los pesos de los modelos, dentro de la implementación los obtiene en base a la arquitectura de 'TheModelFinalFinalV2.ipynb'.
 
 FedProx: Esta implementación añade una variable de regulación dentro del código, dado que busca que los pesos del modelo global no se alejan del modelo localmente entrenado mediante la obtención de promedios (como FedAvg) y 
 los pesos locales. De forma coloquial, es una resta entre los pesos promedios y la diferencia entre los locales y este último. Esta manera de manejar el aprendizaje federado y juntarlos es frecuente cuando los datos se encuentran desbalanceados.
 
-FedMax:Esta implementación extrae los pesos de los modelos y los revisa para conservar el valor máximo, 
+FedMax:Esta implementación extrae los pesos de los modelos y los revisa para conservar el valor máximo para cada uno obtenido dentro de los n modelos individuales obtenidos previamente; se muestra dentro de la implementación, pero su eficacia es considerablemente menor comparado con FedAvg y Fedprox.
 
 
 
