@@ -30,8 +30,9 @@ Para preparar y entrenar el modelo, ejecuta el notebook:
 ```bash
 jupyter notebook Entrenamiento_Local.ipynb
 ```
-  Este notebook utiliza los fragmentos formato json proporcionados anteriormente, donde se incluye la implementación de aprendizaje federado y el entrenamiento independiente de 
-  cada modelo (en conjunto con su exportación individual)
+
+Este notebook utiliza los fragmentos formato json proporcionados anteriormente, donde se incluye la implementación de aprendizaje federado y el entrenamiento independiente de 
+cada modelo (en conjunto con su exportación individual)
 
 
 ## Evaluación de los modelos
@@ -40,9 +41,10 @@ Para validar los modelos, ejecuta el notebook:
 ```bash
 jupyter notebook Evaluacion_Modelo.ipynb
 ```
-  Se evalua cada uno de los segmentos de datos con su validación individuañ
-  Se evualua un modelo global al concertar los modelos y sus pesos mediante FedAvg, FedProx y FedMax 
-  Se entrena y valida el modelo completo como formato comparativa vs el aprendizaje federado.
+
+ * Se evalua cada uno de los segmentos de datos con su validación individuañ
+ * Se evualua un modelo global al concertar los modelos y sus pesos mediante FedAvg, FedProx y FedMax 
+ * Se entrena y valida el modelo completo como formato comparativa vs el aprendizaje federado.
 
 ## Explicación FedAvg, FedProx y FedMax
 
