@@ -3,12 +3,12 @@
 
 # Requisitos Previos  
 Python y dependencias necesarias 🐍
-  numpy
-  matplotlib
-  tensorflow
-  scikit-learn
-  json
-  tqdm
+* numpy
+* matplotlib
+*tensorflow
+*scikit-learn
+*json
+*tqdm
 
 Acceso a los datos segmentados en formato 'data_part_#.json' (proporcionados en conjunto con su código confidencial en la entrega de Canvas)
 
